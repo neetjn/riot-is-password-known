@@ -1,0 +1,31 @@
+{
+  "name": "riot-is-password-known",
+  "version": "0.0.1",
+  "description": "Riot.js mixin to check a given password against haveibeenpawned.com.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neetjn/riot-is-password-known.git"
+  },
+  "keywords": [
+    "riot",
+    "mixin",
+    "password",
+    "security",
+    "pawned"
+  ],
+  "author": "John Nolette",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neetjn/riot-is-password-known/issues"
+  },
+  "homepage": "https://github.com/neetjn/riot-is-password-known#readme",
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "parcel": "^1.11.0",
+    "riot": "^3.13.2"
+  }
+}
