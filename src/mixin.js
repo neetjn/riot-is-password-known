@@ -1,7 +1,7 @@
 import sha1 from 'js-sha1'
 import { Constants } from './constants'
 
-export default function PasswordChecker(password) {
+export default function Mixin(password) {
     const hashed = sha1(password)
     const prefix = hashed.slice(0, Constants.slizeSize)
     const suffix = hashed.slice(Constants.sliceSize)
