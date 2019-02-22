@@ -25,6 +25,7 @@
   "homepage": "https://github.com/neetjn/riot-is-password-known#readme",
   "devDependencies": {
     "jest": "^23.6.0",
+    "js-sha1": "^0.6.0",
     "parcel": "^1.11.0",
     "riot": "^3.13.2"
   }
