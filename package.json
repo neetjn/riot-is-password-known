@@ -2,7 +2,7 @@
   "name": "@neetjn/riot-is-password-known",
   "version": "0.0.1",
   "description": "Riot.js mixin to check a given password against haveibeenpwned.com.",
-  "main": "index.js",
+  "main": "dist/riot-is-password-known.js",
   "scripts": {
     "lint": "npx eslint src/**.js",
     "pretty": "npx prettier-eslint --write src/**.js && npx prettier-eslint --write __tests__/**.js",
@@ -27,8 +27,13 @@
   },
   "homepage": "https://github.com/neetjn/riot-is-password-known#readme",
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.54",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^24.1.0",
+    "babel-jest": "^23.4.0",
+    "babel-loader": "^8.0.4",
     "eslint": "^5.14.1",
     "jest": "^23.6.0",
     "jest-dom": "^3.1.2",
