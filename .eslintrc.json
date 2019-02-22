@@ -22,6 +22,11 @@
     "HTMLInputElement": true,
     "fetch": true,
     "require": true,
-    "module": true
+    "module": true,
+    "describe": true,
+    "beforeEach": true,
+    "document": true,
+    "it": true,
+    "expect": true
   }
 }
