@@ -27,6 +27,8 @@
     "beforeEach": true,
     "document": true,
     "it": true,
-    "expect": true
+    "expect": true,
+    "Event": true,
+    "setTimeout": true
   }
 }
