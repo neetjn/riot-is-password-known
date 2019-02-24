@@ -10,7 +10,8 @@ export function Tag(opts) {
     self.root.addEventListener('keyup', function() {
       const value = self.root.value.replace(/\s/g, '')
       if (value.length > Constants.minPasswordLength) {
-        self.passwordKnown(value)
+        self
+          .passwordKnown(value)
           .then(matched => {
             self.parent.trigger('passwordKnown', matched)
           })
