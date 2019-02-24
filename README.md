@@ -24,7 +24,7 @@ Install the plugin like so:
 
 ```js
 import PasswordKnown from '@neetjn/riot-is-password-known'
-import riot from 'riot'
+import * as riot from 'riot'
 
 PasswordKnown(riot)
 ```
