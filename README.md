@@ -72,7 +72,7 @@ npm install @neetjn/riot-is-password-known
 For quick start using jsdelivr:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@neetjn/riot-is-password-known/dist/riot-is-password-known.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/neetjn/riot-is-password-known/dist/riot-is-password-known.umd.js"></script>
 ```
 
 ### Contributors
