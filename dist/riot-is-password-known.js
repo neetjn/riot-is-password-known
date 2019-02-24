@@ -5,6 +5,6 @@ var parcelRequire=function(e,r,n,t){var i="function"==typeof parcelRequire&&parc
 },{"./constants":"iJA9"}],"gYMG":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.Tag=e;var t=require("./constants");function e(e){const n=this;n.root instanceof HTMLInputElement&&("text"==e.type||"password"==e.type)&&n.root.addEventListener("keyup",function(){const e=n.root.value.replace(/\s/g,"");e.length>t.Constants.minPasswordLength&&n.passwordKnown(e).then(t=>{n.parent.trigger("passwordKnown",t)}).catch(()=>{n.parent.trigger("passwordKnown",!1)})})}
 },{"./constants":"iJA9"}],"GOVZ":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=i;var e=require("./mixin"),r=require("./tag");function i(i){i.mixin({passwordKnown:e.Mixin}),i.tag("password-known",!1,!1,!1,r.Tag)}
+"use strict";var i=require("./mixin"),n=require("./tag");function r(r){r.mixin({passwordKnown:i.Mixin}),r.tag("password-known",!1,!1,!1,n.Tag)}module.exports=r;
 },{"./mixin":"Cprm","./tag":"gYMG"}]},{},["GOVZ"], null)
 //# sourceMappingURL=/riot-is-password-known.map

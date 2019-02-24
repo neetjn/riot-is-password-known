@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "npx eslint src/**.js",
     "pretty": "npx prettier-eslint --write src/**.js && npx prettier-eslint --write __tests__/**.js",
-    "build": "npm run lint && npm run pretty && node_modules/.bin/parcel build src/plugin.js -o riot-is-password-known.umd.js --global PasswordKnown && node_modules/.bin/parcel build src/plugin.js -o riot-is-password-known.js --target node && sed -i -e 's/parcelRequire=func/var parcelRequire=func/g' ./dist/riot-is-password-known.js",
+    "build-browser": "node_modules/.bin/parcel build src/plugin.js -o riot-is-password-known.browser.js --global PasswordKnown",
+    "build-node": "node_modules/.bin/parcel build src/plugin.js -o riot-is-password-known.js --target node && sed -i -e 's/parcelRequire=func/var parcelRequire=func/g' ./dist/riot-is-password-known.js",
+    "build": "npm run lint && npm run pretty && npm run build-browser && npm run build-node",
     "test": "npm run lint && node_modules/.bin/jest --coverage"
   },
   "repository": {
