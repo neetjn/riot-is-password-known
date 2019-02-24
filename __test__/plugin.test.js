@@ -1,6 +1,6 @@
 import 'jest-dom/extend-expect'
-import riot from 'riot'
-import PasswordKnown from '../src/plugin'
+import * as riot from 'riot'
+import { PasswordKnown } from '../src/plugin'
 
 // # install password known plugin
 PasswordKnown(riot)
@@ -20,6 +20,6 @@ describe('Plugin', () => {
   })
 
   it('should install the mixin as intended', function() {
-    expect(riot.passwordKnown).toBeDefined()
+    expect(riot.mixin('passwordKnown')).toBeDefined()
   })
 })
