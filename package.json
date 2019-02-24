@@ -1,7 +1,7 @@
 {
   "name": "@neetjn/riot-is-password-known",
   "version": "0.0.1",
-  "description": "Riot.js mixin to check a given password against haveibeenpwned.com.",
+  "description": "Riot.js plugin to check a given password against the haveibeenpwned.com api, and verify it's secure.",
   "main": "dist/riot-is-password-known.js",
   "scripts": {
     "lint": "npx eslint src/**.js",
