@@ -1,7 +1,6 @@
 # riot-is-password-known
 
 [![build](https://travis-ci.org/neetjn/riot-is-password-known.svg?branch=master)](https://travis-ci.org/neetjn/riot-is-password-known/)
-[![npm version](https://badge.fury.io/js/@neetjn/riot-is-password-known.svg)](https://badge.fury.io/js/@neetjn/riot-is-password-known)
 [![codecov](https://codecov.io/gh/neetjn/riot-is-password-known/branch/master/graph/badge.svg)](https://codecov.io/gh/neetjn/riot-is-password-known)
 
 [![NPM](https://nodei.co/npm/@neetjn/riot-is-password-known.png)](https://nodei.co/npm/@neetjn/riot-is-password-known/)
