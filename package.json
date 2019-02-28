@@ -9,7 +9,7 @@
     "build-browser": "node_modules/.bin/parcel build src/plugin.js -o riot-is-password-known.browser.js --global PasswordKnown",
     "build-node": "node_modules/.bin/parcel build src/plugin.js -o riot-is-password-known.js --target node && sed -i -e 's/parcelRequire=func/var parcelRequire=func/g' ./dist/riot-is-password-known.js",
     "build": "npm run lint && npm run pretty && npm run build-browser && npm run build-node",
-    "test": "npm run lint && node_modules/.bin/jest --coverage"
+    "test": "npm run build && node_modules/.bin/jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -40,6 +40,7 @@
     "jest": "^24.1.0",
     "jest-dom": "^3.0.0",
     "js-sha1": "^0.6.0",
+    "node-fetch": "^2.3.0",
     "parcel": "^1.11.0",
     "parcel-bundler": "^1.11.0",
     "prettier": "^1.16.4",
