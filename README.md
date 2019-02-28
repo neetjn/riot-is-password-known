@@ -42,8 +42,10 @@ Leverage the virtual tag using `password-known`:
     const self = this
 
     self.validPassword = false
-    self.on('passwordKnown', (matched) => {
-        self.validPassword = !matched
+    self.safetyScore = 0
+    self.on('passwordKnown', (result) => {
+        self.validPassword = !result.found
+        self.safetyScore = result.count ....
         self.update()
     })
   </script>

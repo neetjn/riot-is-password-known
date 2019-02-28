@@ -11,7 +11,7 @@ export function Mixin(password) {
         response.text().then(list => {
           const result = list.split('\n').find(p => p.split(':')[0] == suffix)
           resolve({
-            matched: result ? true : false,
+            found: result ? true : false,
             count: result
               ? parseInt(result.split(':')[1].replace('\\r', ''))
               : 0

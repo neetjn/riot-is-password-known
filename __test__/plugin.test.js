@@ -38,8 +38,9 @@ describe('Plugin', () => {
 
     const container = document.querySelector('root')
     context.reached = false
-    container._tag.on('passwordKnown', function(matched) {
-      expect(matched).toBeFalsy()
+    container._tag.on('passwordKnown', function(result) {
+      expect(result.found).toBeTruthy()
+      expect(result.count).toBeGreaterThanOrEqual(23174662)
       context.reached = true
     })
 
