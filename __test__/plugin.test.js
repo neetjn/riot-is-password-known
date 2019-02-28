@@ -1,7 +1,11 @@
 import 'jest-dom/extend-expect'
+import fetch from 'node-fetch'
 import * as riot from 'riot'
-import PasswordKnown from '../src/plugin'
-// import PasswordKnown from '../dist/riot-is-password-known.js'
+import PasswordKnown from '../dist/riot-is-password-known.js'
+
+// # pollyfill for fetch
+// eslint-disable-next-line
+window.fetch = fetch
 
 // # install password known plugin
 PasswordKnown(riot)
