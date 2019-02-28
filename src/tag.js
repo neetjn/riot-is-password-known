@@ -12,8 +12,8 @@ export function Tag(opts) {
       if (value.length > Constants.minPasswordLength) {
         self
           .passwordKnown(value)
-          .then(matched => {
-            self.parent.trigger('passwordKnown', matched)
+          .then(result => {
+            self.parent.trigger('passwordKnown', result)
           })
           .catch(() => {
             self.parent.trigger('passwordKnown', false)
