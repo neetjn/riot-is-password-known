@@ -1,7 +1,7 @@
 import 'jest-dom/extend-expect'
 import * as riot from 'riot'
-// import { PasswordKnown } from '../src/plugin'
-import PasswordKnown from '../dist/riot-is-password-known'
+import PasswordKnown from '../src/plugin'
+// import PasswordKnown from '../dist/riot-is-password-known.js'
 
 // # install password known plugin
 PasswordKnown(riot)
